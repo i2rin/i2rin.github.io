@@ -1,0 +1,29 @@
+# 業績データ
+#
+# category: journal(学術論文) / preprint(プレプリント) / intl_conf(国際会議) /
+#           domestic_conf(国内学会) / other(その他の発表) / invited(招待講演) /
+#           thesis(学位論文) / grant(研究費) / award(受賞)
+# authors: 配列。site.data.profile.name_ja と一致する氏名は work-item.html が自動で太字にする
+# date: "YYYY-MM" 形式
+# peer_reviewed: true / false
+# presentation: oral / poster（口頭発表の有無を表す場合のみ指定、無ければ空文字）
+# featured: true にするとトップページの「主な業績」に表示する想定
+
+- category: domestic_conf
+  title: "透過型ディスプレイを用いた鑑賞者同士の基盤化形成を促進する展示解説システムの提案"
+  title_en: ""
+  authors:
+    - "福田愛琳"
+    - "竹内勇剛"
+  venue: "HCS研究会"
+  vol: ""
+  no: ""
+  pages: ""
+  date: "2026-03"
+  doi: ""
+  url: ""
+  arxiv: ""
+  peer_reviewed: false
+  presentation: oral
+  award: ""
+  featured: false

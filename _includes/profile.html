@@ -1,0 +1,23 @@
+<section class="profile-card">
+  <img class="profile-card__photo" src="{{ site.data.profile.photo | relative_url }}" alt="{{ site.data.profile.name_ja }}">
+  <h1 class="profile-card__name">
+    {{ site.data.profile.name_ja }}
+    {% if site.data.profile.name_kana %}<span class="profile-card__kana">（{{ site.data.profile.name_kana }}）</span>{% endif %}
+  </h1>
+  {% if site.data.profile.name_romaji %}<p class="profile-card__romaji">{{ site.data.profile.name_romaji }}</p>{% endif %}
+  <p class="profile-card__affiliation">{{ site.data.profile.affiliation }}</p>
+
+  {% if site.data.profile.keywords %}
+  <ul class="profile-card__keywords">
+    {% for kw in site.data.profile.keywords %}<li>{{ kw }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if site.data.profile.links %}
+  <ul class="profile-card__links">
+    {% for link in site.data.profile.links %}
+      <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>

@@ -1,0 +1,18 @@
+# TODO: todo.md の「1. 素材を用意する」を元に書き換えてください
+name_ja: "TODO: 氏名（漢字）"
+name_kana: "TODO: ふりがな"
+name_romaji: "TODO: Romaji Name"
+affiliation: "TODO: 大学・研究科・研究室・学年"
+photo: "/assets/images/profile.jpg"
+intro: "TODO: 研究テーマの短い紹介（2〜3行）"
+keywords:
+  - "TODO: キーワード1"
+  - "TODO: キーワード2"
+links:
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/TODO"
+  - label: "GitHub"
+    url: "https://github.com/TODO"
+  - label: "X"
+    url: "https://x.com/TODO"
+email: "TODO [at] example.com"
