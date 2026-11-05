@@ -1,6 +1,5 @@
 :root {
-  --color-bg: #f3f4f7;
-  --color-surface: #ffffff;
+  --color-bg: #ffffff;
   --color-text: #1a1a1a;
   --color-muted: #6b6b6b;
   --color-muted-strong: #474747;
@@ -10,7 +9,6 @@
   --color-accent-bg: #eef2ff;
   --color-award-bg: #fff7e6;
   --color-award-text: #92600a;
-  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
   --max-width: 960px;
 }
 
@@ -40,12 +38,11 @@ a:hover {
 
 /* Header */
 .site-header {
-  background: var(--color-surface);
+  background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.02);
 }
 
 .site-header__inner {
@@ -123,13 +120,6 @@ a:hover {
   margin: 0 0 1.25rem;
 }
 
-.content-card {
-  background: var(--color-surface);
-  border-radius: 16px;
-  box-shadow: var(--shadow-card);
-  padding: 1.75rem 2rem;
-}
-
 .content-card h2:not(:first-child) {
   margin-top: 2rem;
 }
@@ -144,7 +134,6 @@ a:hover {
 }
 
 .site-footer {
-  background: var(--color-surface);
   border-top: 1px solid var(--color-border);
   color: var(--color-muted);
   font-size: 0.85rem;
@@ -157,11 +146,8 @@ a:hover {
   display: flex;
   align-items: flex-start;
   gap: 1.75rem;
-  background: var(--color-surface);
-  border-radius: 16px;
-  box-shadow: var(--shadow-card);
-  padding: 2rem;
-  margin-bottom: 2.5rem;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
 }
 
 .profile-card__photo {
@@ -170,7 +156,6 @@ a:hover {
   border-radius: 12px;
   object-fit: cover;
   flex-shrink: 0;
-  box-shadow: var(--shadow-card);
 }
 
 .profile-card__info {
@@ -239,11 +224,7 @@ a:hover {
 
 /* Works list */
 .works-section {
-  background: var(--color-surface);
-  border-radius: 16px;
-  box-shadow: var(--shadow-card);
-  padding: 1.75rem 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .works-section ul {
@@ -313,11 +294,7 @@ a:hover {
 
 /* Activity list */
 .activity-section {
-  background: var(--color-surface);
-  border-radius: 16px;
-  box-shadow: var(--shadow-card);
-  padding: 1.75rem 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .activity-section ul {
@@ -415,8 +392,7 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0d0d0d;
-    --color-surface: #1a1a1a;
+    --color-bg: #121212;
     --color-text: #f0f0f0;
     --color-muted: #a3a3a3;
     --color-muted-strong: #d0d0d0;
@@ -424,6 +400,5 @@ a:hover {
     --color-accent-bg: #1e2a4a;
     --color-award-bg: #3a2c12;
     --color-award-text: #f0c272;
-    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.4);
   }
 }
