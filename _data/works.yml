@@ -15,15 +15,34 @@
   authors:
     - "福田愛琳"
     - "竹内勇剛"
-  venue: "HCS研究会"
-  vol: ""
-  no: ""
-  pages: ""
+  venue: "電子情報通信学会技術研究報告（信学技報）"
+  vol: "125"
+  no: "368"
+  pages: "72-77"
   date: "2026-03"
   doi: ""
-  url: ""
+  url: "https://ken.ieice.org/ken/paper/20260302icTy/"
   arxiv: ""
   peer_reviewed: false
   presentation: oral
+  award: ""
+  featured: false
+
+- category: domestic_conf
+  title: "透過型ディスプレイによる展示解説が鑑賞者間の指示詞使用と共通基盤形成に及ぼす影響"
+  title_en: ""
+  authors:
+    - "福田愛琳"
+    - "竹内勇剛"
+  venue: "日本認知科学会第43回大会(JCSS2026)"
+  vol: ""
+  no: "P1-78"
+  pages: ""
+  date: "2026-09"
+  doi: ""
+  url: "https://pub.confit.atlas.jp/ja/event/jcss2026/presentation/P1-78"
+  arxiv: ""
+  peer_reviewed: false
+  presentation: poster
   award: ""
   featured: false
