@@ -14,7 +14,15 @@
 <body>
   {% include header.html %}
   <main class="site-main">
-    {{ content }}
+    {% if page.content_card %}
+      {% assign content_parts = content | split: "</h1>" %}
+      {{ content_parts[0] }}</h1>
+      <div class="content-card">
+        {{ content_parts[1] }}
+      </div>
+    {% else %}
+      {{ content }}
+    {% endif %}
   </main>
   {% include footer.html %}
 </body>

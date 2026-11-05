@@ -1,14 +1,15 @@
 ---
 title: About
+content_card: true
 ---
 
 # About
+
 ## プロフィール
 
 {{ site.data.profile.intro }}
 
 ## 学歴・経歴
-
 
 - 2026 - 現在 静岡大学大学院
 - 2022 - 2026 静岡大学

@@ -9,9 +9,7 @@
     <p class="profile-card__affiliation">{{ site.data.profile.affiliation }}</p>
 
     {% if site.data.profile.keywords %}
-    <ul class="profile-card__keywords">
-      {% for kw in site.data.profile.keywords %}<li>{{ kw }}</li>{% endfor %}
-    </ul>
+    <p class="profile-card__keywords">キーワード：{{ site.data.profile.keywords | join: "　" }}</p>
     {% endif %}
 
     {% if site.data.profile.links %}
