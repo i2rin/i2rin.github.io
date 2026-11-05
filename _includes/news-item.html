@@ -4,7 +4,15 @@
 <li class="activity-item">
   <p class="activity-item__date">
     {{ include.news.date }}
-    {% if include.news.date_end and include.news.date_end != "" %} - {{ include.news.date_end }}{% endif %}
+    {% if include.news.date_end and include.news.date_end != "" %}
+      {% assign start_year = include.news.date | slice: 0, 4 %}
+      {% assign end_year = include.news.date_end | slice: 0, 4 %}
+      {% if end_year == start_year %}
+        - {{ include.news.date_end | slice: 5, 5 }}
+      {% else %}
+        - {{ include.news.date_end }}
+      {% endif %}
+    {% endif %}
   </p>
   <p class="activity-item__text">
     {{ include.news.text }}

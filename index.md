@@ -17,4 +17,7 @@ title: Home
       {% include news-item.html news=item %}
     {% endfor %}
   </ul>
+  <p class="activity-section__more">
+    <a class="button" href="{{ '/news/' | relative_url }}">More Info</a>
+  </p>
 </section>
