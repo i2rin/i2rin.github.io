@@ -2,6 +2,7 @@
   --color-bg: #ffffff;
   --color-text: #1a1a1a;
   --color-muted: #6b6b6b;
+  --color-muted-strong: #474747;
   --color-border: #e5e5e5;
   --color-accent: #2563eb;
   --color-accent-bg: #eef2ff;
@@ -115,7 +116,7 @@ a:hover {
 
 .profile-card__kana {
   font-size: 0.85rem;
-  color: var(--color-muted);
+  color: var(--color-muted-strong);
   margin: 0;
 }
 
@@ -125,7 +126,7 @@ a:hover {
 
 .profile-card__romaji {
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: var(--color-muted-strong);
   font-weight: 400;
   margin-left: 0.5rem;
 }
@@ -282,6 +283,7 @@ a:hover {
     --color-bg: #121212;
     --color-text: #f0f0f0;
     --color-muted: #a3a3a3;
+    --color-muted-strong: #d0d0d0;
     --color-border: #2e2e2e;
     --color-accent-bg: #1e2a4a;
     --color-award-bg: #3a2c12;
