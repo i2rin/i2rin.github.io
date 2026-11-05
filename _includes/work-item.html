@@ -29,13 +29,8 @@
       <span class="badge">{% if include.work.presentation == "oral" %}口頭{% elsif include.work.presentation == "poster" %}ポスター{% else %}{{ include.work.presentation }}{% endif %}</span>
     {% endif %}
     {% if include.work.award and include.work.award != "" %}<span class="badge badge--award">{{ include.work.award }}</span>{% endif %}
+    {% if include.work.doi and include.work.doi != "" %}<a class="work-item__link" href="https://doi.org/{{ include.work.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+    {% if include.work.arxiv and include.work.arxiv != "" %}<a class="work-item__link" href="https://arxiv.org/abs/{{ include.work.arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+    {% if include.work.url and include.work.url != "" %}<a class="work-item__link" href="{{ include.work.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
   </p>
-
-  {% if include.work.doi and include.work.doi != "" or include.work.url and include.work.url != "" or include.work.arxiv and include.work.arxiv != "" %}
-  <p class="work-item__links">
-    {% if include.work.doi and include.work.doi != "" %}<a href="https://doi.org/{{ include.work.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
-    {% if include.work.arxiv and include.work.arxiv != "" %}<a href="https://arxiv.org/abs/{{ include.work.arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
-    {% if include.work.url and include.work.url != "" %}<a href="{{ include.work.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
-  </p>
-  {% endif %}
 </li>

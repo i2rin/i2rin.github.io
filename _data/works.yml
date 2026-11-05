@@ -42,7 +42,7 @@
   doi: ""
   url: "https://pub.confit.atlas.jp/ja/event/jcss2026/presentation/P1-78"
   arxiv: ""
-  peer_reviewed: false
+  peer_reviewed: True
   presentation: poster
   award: ""
   featured: false

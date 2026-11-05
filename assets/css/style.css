@@ -132,6 +132,33 @@ a:hover {
   font-size: 0.8rem;
 }
 
+.profile-card__link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-accent-bg);
+  color: var(--color-accent);
+}
+
+.profile-card__link-icon:hover {
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+.profile-card__link-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.profile-card__link-text {
+  font-size: 0.8rem;
+  padding: 0 0.5rem;
+}
+
 /* Works list */
 .works-section {
   margin-bottom: 3rem;
@@ -175,8 +202,8 @@ a:hover {
   color: var(--color-award-text);
 }
 
-.work-item__links a {
-  margin-right: 0.75rem;
+.work-item__link {
+  margin-right: 0.4rem;
   font-size: 0.85rem;
 }
 
