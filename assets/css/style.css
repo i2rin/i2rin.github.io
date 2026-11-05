@@ -94,23 +94,40 @@ a:hover {
 
 /* Profile card */
 .profile-card {
-  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
   padding: 2rem 0;
 }
 
 .profile-card__photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
   object-fit: cover;
-  margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
-.profile-card__kana,
+.profile-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-card__kana {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.profile-card__name {
+  margin: 0.1rem 0 0.5rem;
+}
+
 .profile-card__romaji {
   font-size: 0.9rem;
   color: var(--color-muted);
   font-weight: 400;
+  margin-left: 0.5rem;
 }
 
 .profile-card__keywords,
@@ -118,7 +135,6 @@ a:hover {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 0.5rem;
   padding: 0;
   margin: 0.75rem 0;
@@ -230,6 +246,17 @@ a:hover {
 
 /* Mobile */
 @media (max-width: 640px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-card__keywords,
+  .profile-card__links {
+    justify-content: center;
+  }
+
   .nav-toggle {
     display: flex;
   }
