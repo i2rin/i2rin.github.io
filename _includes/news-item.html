@@ -1,0 +1,13 @@
+{% comment %}
+  Usage: {% include news-item.html news=item %}
+{% endcomment %}
+<li class="activity-item">
+  <p class="activity-item__date">
+    {{ include.news.date }}
+    {% if include.news.date_end and include.news.date_end != "" %} - {{ include.news.date_end }}{% endif %}
+  </p>
+  <p class="activity-item__text">
+    {{ include.news.text }}
+    {% if include.news.url and include.news.url != "" %}<a href="{{ include.news.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
+  </p>
+</li>

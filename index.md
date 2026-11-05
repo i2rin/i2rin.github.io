@@ -9,14 +9,12 @@ title: Home
   <ul>
     {% assign empty_array = "" | split: "," %}
     {% assign news_items = site.data.news | default: empty_array %}
-    {% assign work_items = site.data.works | default: empty_array %}
-    {% assign activities = work_items | concat: news_items | sort: "date" | reverse %}
-    {% assign latest = activities | slice: 0, 5 %}
-    {% if latest.size == 0 %}
-      <p>TODO: works.yml や news.yml にデータを追加すると、新しい順にここに表示されます。</p>
+    {% assign latest_news = news_items | sort: "date" | reverse | slice: 0, 5 %}
+    {% if latest_news.size == 0 %}
+      <p>TODO: news.yml にデータを追加すると、新しい順にここに表示されます。</p>
     {% endif %}
-    {% for activity in latest %}
-      {% include activity-item.html activity=activity %}
+    {% for item in latest_news %}
+      {% include news-item.html news=item %}
     {% endfor %}
   </ul>
 </section>

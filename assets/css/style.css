@@ -207,11 +207,6 @@ a:hover {
   margin-right: 0.4rem;
 }
 
-.badge--accent {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-}
-
 .badge--award {
   border-color: var(--color-award-text);
   background: var(--color-award-bg);

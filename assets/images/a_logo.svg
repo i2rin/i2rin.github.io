@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" role="img" aria-label="Glossy gold abstract A monogram logo">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#fff5ae"/>
+      <stop offset="0.17" stop-color="#f8d76b"/>
+      <stop offset="0.38" stop-color="#c58a1d"/>
+      <stop offset="0.57" stop-color="#fff0a0"/>
+      <stop offset="0.77" stop-color="#e5b33c"/>
+      <stop offset="1" stop-color="#a66b0b"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dot" cx="32%" cy="23%" r="75%">
+      <stop offset="0" stop-color="#fffbd4"/>
+      <stop offset="0.3" stop-color="#f8d56f"/>
+      <stop offset="0.68" stop-color="#d69b24"/>
+      <stop offset="1" stop-color="#a76e13"/>
+    </radialGradient>
+  </defs>
+  <!-- Transparent background; gold loop is an abstract allusion to A. -->
+  <path d="M 359 216 C 362 166 355 91 319 88 C 288 84 267 127 238 166 C 194 225 163 246 132 228 C 109 215 119 192 141 177 C 185 147 252 149 310 173 C 332 182 348 199 359 216"
+        fill="none" stroke="url(#gold)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Soft specular glints for a polished metallic finish. -->
+  <path d="M 137 188 C 151 176 170 167 192 163" fill="none" stroke="url(#shine)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 292 113 C 303 99 311 97 319 99" fill="none" stroke="url(#shine)" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="409" cy="216" r="17" fill="url(#dot)"/>
+  <ellipse cx="404" cy="210" rx="6" ry="3.5" transform="rotate(-30 404 210)" fill="#fffce6" opacity="0.8"/>
+</svg>
