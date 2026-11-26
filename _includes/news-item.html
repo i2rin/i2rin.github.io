@@ -19,9 +19,4 @@
     {% if include.news.url and include.news.url != "" %}<a class="work-item__link" href="{{ include.news.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
     {% if include.news.pdf and include.news.pdf != "" %}<a class="work-item__link" href="{{ include.news.pdf | relative_url }}" target="_blank" rel="noopener">チラシ（PDF）</a>{% endif %}
   </p>
-  {% if include.news.pdf_image and include.news.pdf_image != "" %}
-  <a class="activity-item__flyer" href="{{ include.news.pdf | default: include.news.pdf_image | relative_url }}" target="_blank" rel="noopener">
-    <img src="{{ include.news.pdf_image | relative_url }}" alt="チラシ" loading="lazy">
-  </a>
-  {% endif %}
 </li>

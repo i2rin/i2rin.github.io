@@ -5,11 +5,9 @@
 # text: 本文
 # url: 関連リンク（任意、無ければ空文字）
 # pdf: 添付PDF（任意）"/assets/files/..."
-# pdf_image: PDF のプレビュー画像（任意）"/assets/images/..."。クリックで pdf を開く
 - date: "2026-11-22"
   text: "浜松科学館 みらいーら（浜松市）で開催された「XR Meetup 文化財 #6 in 浜松」で透過型ディスプレイを用いた展示解説のデモを行いました．"
   pdf: "/assets/files/2026-11-22_xr-meetup.pdf"
-  pdf_image: "/assets/images/2026-11-22_xr-meetup.jpg"
 
 - date: "2026-10-15"
   text: "FM AICHIの番組「中電シーティーアイ Welcome Generation」に竹内勇剛教授，川島一希さんと一緒に出演しました．研究内容について紹介しました．"
