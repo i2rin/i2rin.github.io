@@ -1,0 +1,58 @@
+{% assign profile = site.data.profile %}
+<section class="info-section">
+  <h2>連絡先</h2>
+  <dl class="info-list">
+    {% if profile.address %}
+    <div class="info-list__row">
+      <dt>住所</dt>
+      <dd>
+        {% if profile.postal_code %}〒{{ profile.postal_code }} {% endif %}{{ profile.address }}
+        {% if profile.map_url %}<a class="work-item__link" href="{{ profile.map_url }}" target="_blank" rel="noopener">Google Map</a>{% endif %}
+      </dd>
+    </div>
+    {% endif %}
+    {% if profile.email %}
+    <div class="info-list__row">
+      <dt>E-mail</dt>
+      <dd>
+        <span class="info-list__email">{{ profile.email }}</span>
+        <button class="copy-button" type="button" data-copy="{{ profile.email }}">Copy</button>
+      </dd>
+    </div>
+    {% endif %}
+  </dl>
+</section>
+
+{% if profile.lab %}
+<section class="info-section">
+  <h2>所属研究室</h2>
+  <dl class="info-list">
+    <div class="info-list__row">
+      <dt>研究室</dt>
+      <dd>{% if profile.lab.url %}<a href="{{ profile.lab.url }}" target="_blank" rel="noopener">{{ profile.lab.name }}</a>{% else %}{{ profile.lab.name }}{% endif %}</dd>
+    </div>
+    {% if profile.lab.supervisor %}
+    <div class="info-list__row">
+      <dt>指導教員</dt>
+      <dd>{{ profile.lab.supervisor }}</dd>
+    </div>
+    {% endif %}
+    <div class="info-list__row">
+      <dt>所属</dt>
+      <dd>{{ profile.affiliation }}</dd>
+    </div>
+  </dl>
+</section>
+{% endif %}
+
+<script>
+  document.querySelectorAll('.copy-button').forEach(function (button) {
+    button.addEventListener('click', function () {
+      var address = button.dataset.copy.replace(/\s*\[at\]\s*/, '@');
+      navigator.clipboard.writeText(address).then(function () {
+        button.textContent = 'Copied!';
+        setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+      });
+    });
+  });
+</script>

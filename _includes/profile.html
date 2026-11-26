@@ -1,15 +1,22 @@
 <section class="profile-card">
   <img class="profile-card__photo" src="{{ site.data.profile.photo | relative_url }}" alt="{{ site.data.profile.name_ja }}">
   <div class="profile-card__info">
-    {% if site.data.profile.name_kana %}<p class="profile-card__kana">{{ site.data.profile.name_kana }}</p>{% endif %}
+    {% assign name_parts = site.data.profile.name_ja | split: " " %}
+    {% assign kana_parts = site.data.profile.name_kana | default: "" | split: " " %}
     <h1 class="profile-card__name">
-      {{ site.data.profile.name_ja }}
-      {% if site.data.profile.name_romaji %}<span class="profile-card__romaji">/ {{ site.data.profile.name_romaji }}</span>{% endif %}
+      {% if kana_parts.size == name_parts.size %}
+        {% for part in name_parts %}<ruby>{{ part }}<rt>{{ kana_parts[forloop.index0] }}</rt></ruby>{% unless forloop.last %} {% endunless %}{% endfor %}
+      {% else %}
+        {{ site.data.profile.name_ja }}
+      {% endif %}
+      {% if site.data.profile.name_romaji %}<span class="profile-card__romaji">{{ site.data.profile.name_romaji }}</span>{% endif %}
     </h1>
     <p class="profile-card__affiliation">{{ site.data.profile.affiliation }}</p>
 
     {% if site.data.profile.keywords %}
-    <p class="profile-card__keywords">キーワード：{{ site.data.profile.keywords | join: "　" }}</p>
+    <ul class="profile-card__keywords" aria-label="キーワード">
+      {% for keyword in site.data.profile.keywords %}<li>{{ keyword }}</li>{% endfor %}
+    </ul>
     {% endif %}
 
     {% if site.data.profile.links %}

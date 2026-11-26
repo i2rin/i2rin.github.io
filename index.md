@@ -20,3 +20,5 @@
     <a class="button" href="{{ '/news/' | relative_url }}">More Info</a>
   </p>
 </section>
+
+{% include contact.html %}
